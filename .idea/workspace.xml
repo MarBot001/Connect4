@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="60aa5fb5-6769-4663-881d-fb47a7f14187" name="Changes" comment="4. commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_state.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Connect4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Connect4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/GameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/GameLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-12-27T11-10-48_358.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.Connect4Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.Connect4Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.Connect4Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.Connect4Test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +62,13 @@
   "keyToString": {
     "Application.Connect4.executor": "Run",
     "Application.Main.executor": "Run",
+    "JUnit.Connect4Test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Fajlok/Magándolgok/Egyetem/Progtech/Connect4",
+    "last_opened_file_path": "D:/Fajlok/Magándolgok/Egyetem/Progtech/Connect4/mysql-connector-j-9.1.0.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,7 +102,8 @@
       <workItem from="1732439227486" duration="151000" />
       <workItem from="1732439388651" duration="102000" />
       <workItem from="1732439501223" duration="724000" />
-      <workItem from="1735290803280" duration="3637000" />
+      <workItem from="1735290803280" duration="3791000" />
+      <workItem from="1735927941292" duration="6987000" />
     </task>
     <task id="LOCAL-00001" summary="2. commit">
       <option name="closed" value="true" />
@@ -166,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735294032636</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="4. commit">
+      <option name="closed" value="true" />
+      <created>1735294526407</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735294526407</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
