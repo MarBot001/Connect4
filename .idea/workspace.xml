@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60aa5fb5-6769-4663-881d-fb47a7f14187" name="Changes" comment="4. commit">
+      <changelist_data name="Marbot001" email="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_state.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Board.class" afterDir="false" />
@@ -22,6 +23,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -30,6 +32,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Marbot001" />
+        <option value="Marbot001 &lt;droidhun01@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -103,7 +111,7 @@
       <workItem from="1732439388651" duration="102000" />
       <workItem from="1732439501223" duration="724000" />
       <workItem from="1735290803280" duration="3791000" />
-      <workItem from="1735927941292" duration="6987000" />
+      <workItem from="1735927941292" duration="7830000" />
     </task>
     <task id="LOCAL-00001" summary="2. commit">
       <option name="closed" value="true" />
@@ -185,15 +193,36 @@
       <option name="project" value="LOCAL" />
       <updated>1735294526407</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="5. commit">
+      <option name="closed" value="true" />
+      <created>1735935038632</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735935038632</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2. commit" />
     <MESSAGE value="3. commit" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/MarBot001/Connect4" />
+    <MESSAGE value="5. commit" />
     <MESSAGE value="4. commit" />
     <option name="LAST_COMMIT_MESSAGE" value="4. commit" />
   </component>

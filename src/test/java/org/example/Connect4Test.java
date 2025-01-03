@@ -26,17 +26,17 @@ class Connect4Test {
     @Test
     void testPlaceDisc() {
         Board board = new Board();
-        boolean success = board.placeDisc("a", 'R'); // Rakjunk egy piros korongot az 'a' oszlopba
+        boolean success = board.placeDisc("a", 'P'); // Rakjunk egy piros korongot az 'a' oszlopba
         assertTrue(success); // Sikeresnek kell lennie a lépésnek
 
         char[][] grid = board.getGrid();
-        assertEquals('R', grid[5][0]); // A korongnak az 'a' oszlop alján kell lennie (5. sor, 0. oszlop)
+        assertEquals('P', grid[5][0]); // A korongnak az 'a' oszlop alján kell lennie (5. sor, 0. oszlop)
     }
 
     @Test
     void testPlaceDiscInvalidColumn() {
         Board board = new Board();
-        boolean success = board.placeDisc("z", 'R'); // Érvénytelen oszlop ('z')
+        boolean success = board.placeDisc("z", 'P'); // Érvénytelen oszlop ('z')
         assertFalse(success); // Nem lehet sikeres
     }
 
@@ -44,17 +44,17 @@ class Connect4Test {
     void testPlaceDiscFullColumn() {
         Board board = new Board();
         for (int i = 0; i < 6; i++) {
-            assertTrue(board.placeDisc("a", 'R')); // Töltsük fel az 'a' oszlopot
+            assertTrue(board.placeDisc("a", 'P')); // Töltsük fel az 'a' oszlopot
         }
-        boolean success = board.placeDisc("a", 'Y'); // Próbáljunk még egy korongot rakni
+        boolean success = board.placeDisc("a", 'S'); // Próbáljunk még egy korongot rakni
         assertFalse(success); // Nem lehet sikeres, mert az oszlop tele van
     }
 
     @Test
     void testSaveAndLoadState() throws IOException {
         Board board = new Board();
-        board.placeDisc("a", 'R');
-        board.placeDisc("b", 'Y');
+        board.placeDisc("a", 'P');
+        board.placeDisc("b", 'S');
 
         // Állapot mentése
         String filename = "test_board.txt";
@@ -65,7 +65,7 @@ class Connect4Test {
         loadedBoard.loadState(filename);
 
         char[][] loadedGrid = loadedBoard.getGrid();
-        assertEquals('R', loadedGrid[5][0]); // Ellenőrizzük, hogy az 'a' oszlopban a piros korong az alján van
-        assertEquals('Y', loadedGrid[5][1]); // Ellenőrizzük, hogy a 'b' oszlopban a sárga korong az alján van
+        assertEquals('P', loadedGrid[5][0]); // Ellenőrizzük, hogy az 'a' oszlopban a piros korong az alján van
+        assertEquals('S', loadedGrid[5][1]); // Ellenőrizzük, hogy a 'b' oszlopban a sárga korong az alján van
     }
 }
