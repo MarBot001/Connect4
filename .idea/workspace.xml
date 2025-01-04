@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60aa5fb5-6769-4663-881d-fb47a7f14187" name="Changes" comment="4. commit">
+    <list default="true" id="60aa5fb5-6769-4663-881d-fb47a7f14187" name="Changes" comment="5. commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stategame.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stategame.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stategame.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Connect4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Connect4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/DatabaseManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +109,7 @@
       <workItem from="1735927941292" duration="7830000" />
       <workItem from="1735935793161" duration="152000" />
       <workItem from="1735937147953" duration="172000" />
+      <workItem from="1735996545978" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="2. commit">
       <option name="closed" value="true" />
@@ -201,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735935868780</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="5. commit">
+      <option name="closed" value="true" />
+      <created>1735996579875</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735996579875</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,8 +236,8 @@
     <MESSAGE value="2. commit" />
     <MESSAGE value="3. commit" />
     <MESSAGE value="Merge branch 'master' of https://github.com/MarBot001/Connect4" />
-    <MESSAGE value="5. commit" />
     <MESSAGE value="4. commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="4. commit" />
+    <MESSAGE value="5. commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="5. commit" />
   </component>
 </project>
