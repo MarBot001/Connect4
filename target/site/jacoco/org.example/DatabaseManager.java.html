@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="hu"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DatabaseManager.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Connect4</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">DatabaseManager.java</span></div><h1>DatabaseManager.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.sql.*;
+
+public class DatabaseManager {
+    private static final String URL = &quot;jdbc:mysql://localhost:3306/connect4&quot;;
+    private static final String USER = &quot;root&quot;;
+    private static final String PASSWORD = &quot;&quot;;
+
+
+    private Connection connection;
+
+<span class="nc" id="L13">    public DatabaseManager() throws SQLException {</span>
+
+<span class="nc" id="L15">        connection = DriverManager.getConnection(URL, USER, PASSWORD);</span>
+<span class="nc" id="L16">    }</span>
+
+    public void updateWins(String player) throws SQLException {
+<span class="nc" id="L19">        String selectQuery = &quot;SELECT winsnumber FROM wins WHERE player = ?&quot;;</span>
+<span class="nc" id="L20">        String updateQuery = &quot;UPDATE wins SET winsnumber = ? WHERE player = ?&quot;;</span>
+<span class="nc" id="L21">        String insertQuery = &quot;INSERT INTO wins (player, winsnumber) VALUES (?, ?)&quot;;</span>
+
+<span class="nc" id="L23">        try (PreparedStatement selectStmt = connection.prepareStatement(selectQuery)) {</span>
+<span class="nc" id="L24">            selectStmt.setString(1, player);</span>
+<span class="nc" id="L25">            ResultSet rs = selectStmt.executeQuery();</span>
+
+<span class="nc bnc" id="L27" title="All 2 branches missed.">            if (rs.next()) {</span>
+<span class="nc" id="L28">                int winsNumber = rs.getInt(&quot;winsnumber&quot;) + 1;</span>
+<span class="nc" id="L29">                try (PreparedStatement updateStmt = connection.prepareStatement(updateQuery)) {</span>
+<span class="nc" id="L30">                    updateStmt.setInt(1, winsNumber);</span>
+<span class="nc" id="L31">                    updateStmt.setString(2, player);</span>
+<span class="nc" id="L32">                    updateStmt.executeUpdate();</span>
+                }
+<span class="nc" id="L34">            } else {</span>
+<span class="nc" id="L35">                try (PreparedStatement insertStmt = connection.prepareStatement(insertQuery)) {</span>
+<span class="nc" id="L36">                    insertStmt.setString(1, player);</span>
+<span class="nc" id="L37">                    insertStmt.setInt(2, 1);</span>
+<span class="nc" id="L38">                    insertStmt.executeUpdate();</span>
+                }
+            }
+        }
+<span class="nc" id="L42">    }</span>
+    public void printWinsTable() throws SQLException {
+<span class="nc" id="L44">        String query = &quot;SELECT * FROM wins&quot;;</span>
+
+<span class="nc" id="L46">        try (PreparedStatement stmt = connection.prepareStatement(query);</span>
+<span class="nc" id="L47">             ResultSet rs = stmt.executeQuery()) {</span>
+
+<span class="nc" id="L49">            System.out.println(&quot;Eddigi győzelmek:&quot;);</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">            while (rs.next()) {</span>
+<span class="nc" id="L51">                String player = rs.getString(&quot;player&quot;);</span>
+<span class="nc" id="L52">                int wins = rs.getInt(&quot;winsnumber&quot;);</span>
+<span class="nc" id="L53">                System.out.println(player + &quot;, Győzelmek száma: &quot; + wins);</span>
+<span class="nc" id="L54">            }</span>
+        }
+<span class="nc" id="L56">    }</span>
+
+
+    public void close() throws SQLException {
+<span class="nc bnc" id="L60" title="All 4 branches missed.">        if (connection != null &amp;&amp; !connection.isClosed()) {</span>
+<span class="nc" id="L61">            connection.close();</span>
+        }
+<span class="nc" id="L63">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
