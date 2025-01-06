@@ -18,7 +18,7 @@ class Connect4Test {
 
         for (char[] row : grid) {
             for (char cell : row) {
-                assertEquals('.', cell); // Ellenőrizzük, hogy minden cella üres ('.')
+                assertEquals('_', cell); // Ellenőrizzük, hogy minden cella üres
             }
         }
     }
