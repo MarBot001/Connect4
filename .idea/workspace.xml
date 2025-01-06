@@ -7,6 +7,12 @@
     <list default="true" id="60aa5fb5-6769-4663-881d-fb47a7f14187" name="Changes" comment="5. commit">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stategame.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Connect4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Connect4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/DatabaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_board.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +110,8 @@
       <workItem from="1735927941292" duration="7830000" />
       <workItem from="1735935793161" duration="152000" />
       <workItem from="1735937147953" duration="172000" />
-      <workItem from="1735996545978" duration="539000" />
+      <workItem from="1735996545978" duration="1982000" />
+      <workItem from="1736106424427" duration="2521000" />
     </task>
     <task id="LOCAL-00001" summary="2. commit">
       <option name="closed" value="true" />
@@ -218,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735997033235</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="5. commit">
+      <option name="closed" value="true" />
+      <created>1735997105573</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735997105573</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -7,7 +7,7 @@ public class Board {
     private final char[][] grid;
     private final int rows = 6;
     private final int columns = 7;
-    private final char emptySlot = '.';
+    private final char emptySlot = '_';
 
     public Board() {
         grid = new char[rows][columns];
